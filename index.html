@@ -1,1 +1,21 @@
-Error 403 : Not allowed
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>...</title>
+<script>
+  // Obtenir le nom du fichier demandé dans l'URL
+  const path = window.location.pathname;
+  const filename = path.substring(path.lastIndexOf('/') + 1).toLowerCase();
+
+  // Vérifier si le fichier n'est PAS "version.txt"
+  if (filename !== "version.txt") {
+    // Rediriger vers l'URL cible
+    window.location.href = "https://pytoexe.rf.gd";
+  }
+</script>
+</head>
+<body>
+<p></p>
+</body>
+</html>
