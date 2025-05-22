@@ -1,7 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# Rediriger toutes les requêtes vers le nouveau domaine
-RewriteCond %{REQUEST_URI} !^/\.well-known/ # Optionnel, pour Let’s Encrypt
-RewriteRule ^(.*)$ https://pytoexe.rf.gd/ [R=301,L]
